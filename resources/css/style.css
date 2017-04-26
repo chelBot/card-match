@@ -21,6 +21,17 @@ p {
   color: #CACAAA;
 }
 
+/* Copied from the internet! */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 .card {
   width: 14.5rem;
   height: 12.5rem;
@@ -36,6 +47,8 @@ p {
   font-size: 7rem;
   color: rgb(255, 255, 255);
   cursor: pointer;
+  transition : all 400ms ease-in;
+  transform: rotateY(-180deg) scale(-1, 1);
 }
 
 .button {
@@ -62,7 +75,7 @@ p {
   box-shadow: 1px 1px 1px #000;
 }
 
-.spin:hover {
+/*.spin:hover {
     animation: spin 5s linear infinite;
 }
 @keyframes spin {
@@ -72,4 +85,4 @@ p {
   100% {
     transform: rotate(2deg) rotateY(360deg);
   }
-}
+}*/
